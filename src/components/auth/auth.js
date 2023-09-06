@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import { Formik } from "formik";
 import { connect } from "react-redux";
-import { Button } from "@mui/material";
+import { Alert, Button, Typography } from "@mui/material";
 import { auth } from "../../redux/authActions";
+import { Link } from "react-router-dom";
+
 
 const mapStateToProps = (state) => {
     return {
+        token: state.token,
         authFailedMsg: state.authFailedMsg,
     };
 };
@@ -25,6 +28,7 @@ class Auth extends Component {
             mode: this.state.mode === "Sign Up" ? "Login" : "Sign Up",
         });
     };
+
     render() {
         let err = null;
         if (this.props.authFailedMsg !== null) {
@@ -39,6 +43,35 @@ class Auth extends Component {
                     }}
                 >
                     {this.props.authFailedMsg}
+                </div>
+            );
+        }
+
+        let success = null;
+        if (this.props.token !== null && this.state.mode === "Sign Up") {
+            success = (
+                <div className="mb-4 ">
+                    <Alert severity="success">
+                        <Typography variant="body1">
+                            Account created successfully
+                        </Typography>
+                        <Link to={"/"}>
+                            <Button variant="outlined"> Back to home</Button>
+                        </Link>
+                    </Alert>
+                </div>
+            );
+        } else if (this.props.token !== null && this.state.mode === "Login") {
+            success = (
+                <div className="mb-4">
+                    <Alert severity="success">
+                        <Typography variant="body1">
+                            Logged in successfully
+                        </Typography>
+                        <Link to={"/"}>
+                            <Button variant="outlined">Back to home</Button>
+                        </Link>
+                    </Alert>
                 </div>
             );
         }
@@ -156,6 +189,7 @@ class Auth extends Component {
 
         return (
             <div>
+                {success}
                 {err}
                 {form}
             </div>

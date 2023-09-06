@@ -59,7 +59,7 @@ export const logout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("expirationTime");
     localStorage.removeItem("userId");
-    // localStorage.removeItem("bookedRoom");
+    localStorage.removeItem("customers");
     return {
         type: actionTypes.AUTH_LOGOUT,
     };
