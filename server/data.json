@@ -1,0 +1,51 @@
+{
+  "rooms": [
+    {
+      "id": 0,
+      "name": "General",
+      "image": "images/room-1.jpg",
+      "bed": "1",
+      "sofa": "1",
+      "bathroom": "1",
+      "wifi": "free wifi",
+      "rating": "4.8/9",
+      "price": "$120"
+    },
+    {
+      "id": 1,
+      "name": "General premium",
+      "image": "images/room-4.jpg",
+      "bed": "2",
+      "sofa": "2",
+      "bathroom": "2",
+      "wifi": "free wifi",
+      "rating": "4.5/5",
+      "price": "$160"
+    },
+    {
+      "id": 2,
+      "name": "Single Bed",
+      "image": "images/room-2.jpg",
+      "bed": "1",
+      "sofa": "1",
+      "bathroom": "1",
+      "wifi": "free wifi",
+      "rating": "4.5/5",
+      "price": "$90"
+    },
+    {
+      "id": 3,
+      "name": "Double Bed",
+      "image": "images/room-5.jpg",
+      "bed": "2",
+      "sofa": "2",
+      "bathroom": "1",
+      "wifi": "free wifi",
+      "rating": "4.5/5",
+      "price": "$100"
+    }
+  ],
+  "customer": [
+    
+  ]
+}

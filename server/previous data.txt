@@ -1,0 +1,68 @@
+"rooms": [
+    {
+      "id": 0,
+      "name": "General",
+      "image": "images/room-1.jpg",
+      "bed": "1",
+      "sofa": "1",
+      "bathroom": "1",
+      "wifi": "free wifi",
+      "rating": "4.8/9",
+      "price": "$120"
+    },
+    {
+      "id": 1,
+      "name": "Single Bed",
+      "image": "images/room-2.jpg",
+      "bed": "3",
+      "sofa": "2",
+      "bathroom": "2",
+      "wifi": "free wifi",
+      "rating": "4.5/5",
+      "price": "$90"
+    },
+    {
+      "id": 2,
+      "name": "Master",
+      "image": "images/room-3.jpg",
+      "bed": "3",
+      "sofa": "2",
+      "bathroom": "2",
+      "wifi": "free wifi",
+      "rating": "4.5/5",
+      "price": "$150"
+    },
+    {
+      "id": 3,
+      "name": "General premium",
+      "image": "images/room-4.jpg",
+      "bed": "3",
+      "sofa": "2",
+      "bathroom": "2",
+      "wifi": "free wifi",
+      "rating": "4.5/5",
+      "price": "$120"
+    },
+    {
+      "id": 4,
+      "name": "Double Bed",
+      "image": "images/room-5.jpg",
+      "bed": "3",
+      "sofa": "2",
+      "bathroom": "2",
+      "wifi": "free wifi",
+      "rating": "4.5/5",
+      "price": "$90"
+    },
+    {
+      "id": 5,
+      "name": "Master(Double Bed)",
+      "image": "images/room-6.jpg",
+      "bed": "3",
+      "sofa": "2",
+      "bathroom": "2",
+      "wifi": "free wifi",
+      "rating": "4.5/5",
+      "price": "$170"
+    }
+  ],
