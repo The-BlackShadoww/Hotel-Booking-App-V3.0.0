@@ -1,6 +1,5 @@
 export const ROOMS = "ROOMS";
 export const ADD_CUSTOMER = "ADD_CUSTOMER";
-export const DECREMENT_ROOM_NUMBER = "DECREMENT_ROOM_NUMBER";
 export const AUTH_SUCCESS = "AUTH_SUCCESS";
 export const AUTH_FAILED = "AUTH_FAILED";
 export const AUTH_LOGOUT = "AUTH_LOGOUT";
